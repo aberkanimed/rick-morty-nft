@@ -20,10 +20,10 @@ const Filters = ({ setStatus, setGender, setSpecies, setPageNumber }) => {
             <div className="w-full bg-white rounded-lg shadow divide-y divide-gray-200">
                 <div>
                     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <section aria-labelledby="filters-heading" className="pt-6 pb-24">
+                        <section aria-labelledby="filters-heading" className="pt-6 pb-12 lg:pb-24">
                             <div className="grid grid-cols-1 gap-x-8 gap-y-10">
                                 {/* Filters */}
-                                <form className="hidden lg:block">
+                                <form className="">
                                     <h3 className="sr-only">Filters</h3>
                                     <Status setStatus={setStatus} setPageNumber={setPageNumber}/>
                                     <Species setSpecies={setSpecies} setPageNumber={setPageNumber}/>
