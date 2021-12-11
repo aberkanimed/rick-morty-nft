@@ -15,7 +15,7 @@ function App() {
         <Navbar/>
       </div>
       <Routes>
-        <Route path="/rick-morty-react/" element={<Home/>} />
+        <Route path="/rick-morty-react" element={<Home/>} />
         <Route path="/rick-morty-react/episodes" element={<Episodes/>} />
         <Route path="/rick-morty-react/locations" element={<Locations/>} />
       </Routes>
