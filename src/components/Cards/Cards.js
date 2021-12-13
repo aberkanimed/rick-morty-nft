@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cards = ({ results }) => {
+const Cards = ({ results, addToCart }) => {
   let display;
 
   if (results) {
@@ -41,6 +41,9 @@ const Cards = ({ results }) => {
                   })()}
               </dd>
             </dl>
+            <div className="mt-6">
+              <button onClick={ () => {addToCart(character)} } className="bg-blue-100 border border-transparent rounded-md py-2 px-8 items-center justify-center text-sm font-medium text-blue-700 hover:bg-blue-200">Add to cart</button>
+            </div>
           </div>
         </li>
       );

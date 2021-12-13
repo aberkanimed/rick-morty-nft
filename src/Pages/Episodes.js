@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Cards from '../components/Cards/Cards';
 import SelectMenu from '../components/Filters/Category/SelectMenu';
 
-const Episodes = () => {
+const Episodes = ({ addToCart }) => {
     let [id, setId] = useState(1);
     let [info, setInfo] = useState([]);
     let [results, setResults] = useState([]);
@@ -37,7 +37,7 @@ const Episodes = () => {
             </div>
             <div className="col-start-3 col-span-8 lg:col-start-4">
                 <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    <Cards results={results}/>
+                    <Cards results={results} addToCart={addToCart}/>
                 </ul>
             </div>
         </div>
