@@ -42,10 +42,10 @@ function App() {
         <Navbar totalItems={cartItems.length}/>
       </div>
       <Routes>
-        <Route path="/rick-morty-react" element={<Home addToCart={addToCart} />} />
-        <Route path="/rick-morty-react/episodes" element={<Episodes addToCart={addToCart} />} />
-        <Route path="/rick-morty-react/locations" element={<Locations addToCart={addToCart} />} />
-        <Route path="/rick-morty-react/cart" element={<ShoppingCart cartItems={cartItems} removeItem={removeItem} subtotal={subtotal} />} />
+        <Route path="/" element={<Home addToCart={addToCart} />} />
+        <Route path="/episodes" element={<Episodes addToCart={addToCart} />} />
+        <Route path="/locations" element={<Locations addToCart={addToCart} />} />
+        <Route path="/cart" element={<ShoppingCart cartItems={cartItems} removeItem={removeItem} subtotal={subtotal} />} />
       </Routes>
     </Router>
   )

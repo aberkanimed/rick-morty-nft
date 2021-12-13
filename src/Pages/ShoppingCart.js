@@ -45,7 +45,7 @@ const ShoppingCart = ({ cartItems, removeItem, subtotal }) => {
 
                                     <div className="mt-6 text-sm text-center">
                                         <p>
-                                            or <NavLink to="/rick-morty-react" className="text-blue-600 font-medium hover:text-blue-500">Continue Shopping<span aria-hidden="true"> &rarr;</span></NavLink>
+                                            or <NavLink to="/" className="text-blue-600 font-medium hover:text-blue-500">Continue Shopping<span aria-hidden="true"> &rarr;</span></NavLink>
                                         </p>
                                     </div>
                                 </section>
@@ -55,7 +55,7 @@ const ShoppingCart = ({ cartItems, removeItem, subtotal }) => {
                         return (
                             <div className="mt-6 text-sm text-center">
                                 <p>
-                                    <NavLink to="/rick-morty-react" className="text-blue-600 font-medium hover:text-blue-500">Continue Shopping<span aria-hidden="true"> &rarr;</span></NavLink>
+                                    <NavLink to="/" className="text-blue-600 font-medium hover:text-blue-500">Continue Shopping<span aria-hidden="true"> &rarr;</span></NavLink>
                                 </p>
                             </div>
                         );
