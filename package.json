@@ -21,7 +21,6 @@
   },
   "scripts": {
     "start": "craco start",
-    "heroku-postbuild": "npm install --only=dev && npm install && npm run build",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
