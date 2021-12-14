@@ -15,12 +15,14 @@ const Home = ({ addToCart }) => {
     let {info, results} = fetchedData;
 
     let api = `https://rickandmortyapi.com/api/character?page=${pageNumber}&name=${search}&status=${status}&gender=${gender}&species=${species}`;
+
     useEffect(() => {
       (async function(){
         let data = await fetch(api).then(res => res.json());
         updateFetchedData(data);
       })()
     }, [api])
+
     return (
       <div>
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8">
